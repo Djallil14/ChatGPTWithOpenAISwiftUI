@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		C5CA307D299EC4C6008890B7 /* ChatGPTSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA307C299EC4C6008890B7 /* ChatGPTSwiftUIApp.swift */; };
-		C5CA307F299EC4C6008890B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA307E299EC4C6008890B7 /* ContentView.swift */; };
+		C5CA307F299EC4C6008890B7 /* MainConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA307E299EC4C6008890B7 /* MainConversationView.swift */; };
 		C5CA3081299EC4C8008890B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5CA3080299EC4C8008890B7 /* Assets.xcassets */; };
 		C5CA3084299EC4C8008890B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5CA3083299EC4C8008890B7 /* Preview Assets.xcassets */; };
+		C5CA308B299EC51D008890B7 /* MessageAndUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA308A299EC51D008890B7 /* MessageAndUserModel.swift */; };
+		C5CA308D299EC574008890B7 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA308C299EC574008890B7 /* MessageRowView.swift */; };
+		C5CA308F299EC6C1008890B7 /* OpenAINetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA308E299EC6C1008890B7 /* OpenAINetworkManager.swift */; };
+		C5CA3091299EC7CE008890B7 /* MessageExchangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA3090299EC7CE008890B7 /* MessageExchangeView.swift */; };
+		C5CA3093299EC8CD008890B7 /* ChatGPTConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA3092299EC8CD008890B7 /* ChatGPTConversationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C5CA3079299EC4C6008890B7 /* ChatGPTSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CA307C299EC4C6008890B7 /* ChatGPTSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTSwiftUIApp.swift; sourceTree = "<group>"; };
-		C5CA307E299EC4C6008890B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C5CA307E299EC4C6008890B7 /* MainConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConversationView.swift; sourceTree = "<group>"; };
 		C5CA3080299EC4C8008890B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5CA3083299EC4C8008890B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5CA308A299EC51D008890B7 /* MessageAndUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAndUserModel.swift; sourceTree = "<group>"; };
+		C5CA308C299EC574008890B7 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
+		C5CA308E299EC6C1008890B7 /* OpenAINetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAINetworkManager.swift; sourceTree = "<group>"; };
+		C5CA3090299EC7CE008890B7 /* MessageExchangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageExchangeView.swift; sourceTree = "<group>"; };
+		C5CA3092299EC8CD008890B7 /* ChatGPTConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTConversationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,12 @@
 			isa = PBXGroup;
 			children = (
 				C5CA307C299EC4C6008890B7 /* ChatGPTSwiftUIApp.swift */,
-				C5CA307E299EC4C6008890B7 /* ContentView.swift */,
+				C5CA307E299EC4C6008890B7 /* MainConversationView.swift */,
+				C5CA308A299EC51D008890B7 /* MessageAndUserModel.swift */,
+				C5CA308C299EC574008890B7 /* MessageRowView.swift */,
+				C5CA308E299EC6C1008890B7 /* OpenAINetworkManager.swift */,
+				C5CA3090299EC7CE008890B7 /* MessageExchangeView.swift */,
+				C5CA3092299EC8CD008890B7 /* ChatGPTConversationViewModel.swift */,
 				C5CA3080299EC4C8008890B7 /* Assets.xcassets */,
 				C5CA3082299EC4C8008890B7 /* Preview Content */,
 			);
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5CA307F299EC4C6008890B7 /* ContentView.swift in Sources */,
+				C5CA308B299EC51D008890B7 /* MessageAndUserModel.swift in Sources */,
+				C5CA3091299EC7CE008890B7 /* MessageExchangeView.swift in Sources */,
+				C5CA3093299EC8CD008890B7 /* ChatGPTConversationViewModel.swift in Sources */,
+				C5CA307F299EC4C6008890B7 /* MainConversationView.swift in Sources */,
+				C5CA308F299EC6C1008890B7 /* OpenAINetworkManager.swift in Sources */,
 				C5CA307D299EC4C6008890B7 /* ChatGPTSwiftUIApp.swift in Sources */,
+				C5CA308D299EC574008890B7 /* MessageRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
